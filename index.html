@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion Final</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasappfinal.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/conservatorio1.jpg','imagenes/mecatronica.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>INGENIERIAS Y LICENCIATURAS(informacion) </h1>
+</div>
+<!--div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de perfil</h1>
+<div>
+<p> Esta es mi imagen de perfil:
+<br>
+</div>
+<div>
+<img src="imagenes/yo.png" width="50%" height="50%"> </div>
+</div>
+</div-->
+
+<div> 
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>INGENIERIAS</h2>
+<p> Se muestra nombre,universidad,informacion</p>
+</font>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>LICENCIATURAS</h2>
+<p>Se muestra nombre,universidad,informacion</p>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Desarrollado por:</h1>
+<div>
+<p><font color="#660066" face="harrington">
+<ul>
+<li>CENTRO DE BACHILLERATO TECNOLOGICO INDUSTRIAL Y DE SERVICIOS</li>
+<li>CBTis 16 </li>
+<li>Consuelo Coyotl Casasola</li><br>
+<li>4° "H"</li></ul></font></p>
+
+<br>
+</div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion final</h4>
+<h4>Consuelo Coyotl Casasola </h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>INGENIERIAS</h1>
+</div>
+<div data-role="content" align="left">
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>INGENIERIA MECATRONICA</h1>
+<div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>UVP</h1>
+<div>
+<p>La Mecatrónica comprende la integración, coordinación y puesta en marcha de sistemas electrónicos, mecánicos e informáticos, no se puede concebir el futuro de la industria sin la intervención de la misma, ya que existe una tendencia hacia sistemas robotizados de producción.</p>
+
+<br>
+</div>
+<a href="http://www.uvp.mx/ingenierias/ingenieria-mecatronica"><font color="#FFFF00">Clic aqui para saber el plan de estudios</font></a>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/mecatronica.jpg',1)"><img src="imagenes/uvp.jpg" width="295" height="199" id="Image5"></a> </div>
+</div>
+</div>
+
+<br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>INGENIERIA EN QUIMICA</h1>
+<div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>EISI</h1>
+<div>
+<p>La Ingeniería Química es la profesión en la cual el conocimiento de la Química, Matemáticas, Física y otras ciencias básicas se aplican directamente a procesos industriales para convertir materias primas, sustancias, compuestos u otros elementos en productos  útiles, aprovechables o de mayor valor para el beneficio directo de la Humanidad.
+</p>
+<img src="imagenes/quimica.jpg" width="50%" height="50%">
+<br>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>UNAM</h1>
+<div>
+<p>MISIÓN:Formar ingenieros quimicos  con una solida preparacion cientifico-tecnologica y una conciencia social que les permite contribuir al desarrollo sustentable y a incrementar la calidad de vida del ser humano.
+VISIÓN:Ser el mejor progarma de ingenieria Química de Latinoamerica, gozar de un gran prestigio a nivel  mundial, estar acreditado, por la alta calidad cientifica, tecnologica y humana de sus egresados , quienes ejercen un gran impacto en su entorno laboral y caracterizarse por una interaccion dinamica con el sector industrial.
+</p>
+<img src="imagenes/unam.jpg" width="50%" height="50%">
+<br>
+</div>
+<a href="http://www.quimica.unam.mx/cont_espe2.php?_rubrique=60&id_article=3127&color=&rub2=60"><font color="#FFFF00">Clic aqui para saber el plan de estudios</font></a>
+</div>
+</div>
+
+
+<br>
+</div>
+</div>
+</div>
+
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion final, CCC</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>LICENCIATURA</h1>
+</div>
+<div data-role="content" align="left">
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>LICENCIATURA EN MÚSICA</h1>
+<div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONSERVATORIO DEL ESTADO DE PUEBLA</h1>
+<div>
+<p>El Conservatorio de Música del Estado de Puebla es una Institución dependiente la Secretaría de Educación Pública del Gobierno del Estad de Puebla, encargada de formar profesionales en la Música.
+Fundado en 1917, es en nuestros días la Institución educativa musical con mayor trayectoria en nuestro Estado brindando enseñanza musical inicial, preparatoria y de tipo superior ofreciendo la Licenciatura en Música con catorce especialidades: <i><b>Piano, Canto, Violín, Violoncelo, Contrabajo, Guitarra, Flauta, Clarinete, Saxofón, Oboe, Trompeta, Trombón, Corno Francés y Percusiones.</b></i> </p>
+
+<!--visor-->
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:320px;height:240px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+<h2>OFERTA ACADEMICA</h2>
+<a href="http://www.consermuspue.edu.mx/oferta-academica.php"><font color="#FFFF00">Clic aqui para saber el plan de estudios</font></a>
+<h3>INICIAL EN MÚSICA</h3>
+<p>3 años</p>
+<h3>PREPARATORIO EN MÚSICA</h3>
+<p>3 años</p>
+<h3>LICENCIATURA EN MÚSICA</h3>
+<p>5 años</p>
+<p>Los instrumentos a elegir son: Piano, Canto, Violín, Violoncelo, Contrabajo, Guitarra, Flauta, Clarinete, Saxofón, Oboe, Trompeta, Trombón, Corno Francés y Percusiones</p>
+<br>
+</div>
+<a href="http://www.consermuspue.edu.mx/convocatoria2015.php"><font color="#FFFF00">Clic aqui para saber los requisitos</font></a>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/conservatorio1.jpg',1)"><img src="imagenes/conservatorio.jpg" width="271" height="122" id="Image3"></a> </div>
+</div>
+</div>
+
+<br>
+</div>
+</div>
+</div>
+
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion final, CCC</h4>
+</div>
+</div>
+</div>
+
+</body>
+</html>
